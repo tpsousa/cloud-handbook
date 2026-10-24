@@ -1,0 +1,105 @@
+site_name: Cloud Engineering — Technical Handbook
+site_description: Fundamentos, infraestrutura e mentalidade de sustentação. Material pessoal de estudo de Thiago Sousa.
+site_author: Thiago Sousa
+# Troque pelo seu usuário e nome do repositório:
+site_url: https://tpsousa.github.io/cloud-handbook/
+repo_url: https://github.com/tpsousa/cloud-handbook
+repo_name: tpsousa/cloud-handbook
+edit_uri: ""
+
+theme:
+  name: material
+  language: pt-BR
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+
+nav:
+  - Início: index.md
+  - Introdução: introducao.md
+  - Fundamentos:
+      - 1. Infraestrutura Moderna: 01-infraestrutura-moderna.md
+      - 2. Sistemas Operacionais: 02-sistemas-operacionais.md
+  - Redes:
+      - 3. Fundamentos de Redes: 03-redes.md
+      - 4. DNS: 04-dns.md
+  - Virtualização:
+      - 5. Virtualização: 05-virtualizacao.md
+  - Cloud:
+      - 6. Fundamentos de Cloud: 06-fundamentos-cloud.md
+      - 7. AWS Fundamentals: 07-aws-fundamentals.md
+      - 8. CloudWatch e SSM: 08-cloudwatch-ssm.md
+      - 9. Arquitetura de uma VPC: 09-vpc.md
+  - Containers e IaC:
+      - 10. Docker: 10-docker.md
+      - 11. Kubernetes: 11-kubernetes.md
+      - 12. Terraform: 12-terraform.md
+  - Automação:
+      - 13. Bash: 13-bash.md
+      - 14. Python para Infraestrutura: 14-python.md
+  - Operação:
+      - 15. Observabilidade: 15-observabilidade.md
+      - 16. Mentalidade de Sustentação: 16-sustentacao.md
+      - 17. Laboratórios: 17-laboratorios.md
+      - 18. Arquitetura de Ponta a Ponta: 18-arquitetura.md
+  - Entrevista e Glossário:
+      - 19. Perguntas e Respostas: 19-entrevista.md
+      - Glossário: glossario.md
