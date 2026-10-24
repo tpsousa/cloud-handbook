@@ -3,7 +3,7 @@
 Fundamentos, infraestrutura e mentalidade de sustentação.
 Material pessoal de estudo e referência técnica de **Thiago Sousa**.
 
-📖 **Site:** https://SEU-USUARIO.github.io/cloud-handbook/
+📖 **Site:** https://tpsousa.github.io/cloud-handbook/
 📄 **PDF:** [`docs/assets/cloud-engineering-handbook.pdf`](docs/assets/cloud-engineering-handbook.pdf)
 
 ## Rodando localmente
