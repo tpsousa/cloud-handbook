@@ -1,0 +1,49 @@
+/* Hero da página inicial */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, #0b1d4a 100%);
+  color: #fff;
+}
+.hero h1 {
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0.4rem 0;
+}
+.hero p {
+  margin: 0.4rem auto;
+  max-width: 36rem;
+  opacity: 0.92;
+}
+.hero .badge {
+  display: inline-block;
+  padding: 0.15rem 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 999px;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.hero .md-button {
+  margin: 0.5rem 0.25rem 0;
+  color: #fff;
+  border-color: #fff;
+}
+.hero .md-button--primary {
+  background: #fff;
+  color: var(--md-primary-fg-color);
+}
+
+/* Diagramas ASCII mais legíveis */
+.diagrama pre code {
+  line-height: 1.25;
+  font-size: 0.78rem;
+}
+
+/* Cartões na home */
+.grid.cards > ul > li {
+  border-radius: 10px;
+}
